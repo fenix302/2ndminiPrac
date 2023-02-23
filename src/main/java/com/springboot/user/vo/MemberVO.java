@@ -17,7 +17,7 @@ import javax.persistence.Transient;
 @Entity
 @Table(name="member")
 public class MemberVO {
-	
+	  
 	@Id
 	@GeneratedValue(
             strategy=GenerationType.SEQUENCE,
