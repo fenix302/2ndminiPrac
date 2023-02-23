@@ -1,13 +1,13 @@
-package com.springboot.naverlogin;
+package com.springboot.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootNaverLoginApplication {
+public class miniApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootNaverLoginApplication.class, args);
+		SpringApplication.run(miniApplication.class, args);
 	}
 
 }

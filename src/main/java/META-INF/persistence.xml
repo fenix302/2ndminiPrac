@@ -3,5 +3,6 @@
 	<persistence-unit name="SpringBoot_NaverLogin">
 		<class>com.springboot.naverlogin.impl.UserServiceImpl</class>
 		<class>com.springboot.naverlogin.model.User</class>
+		<class>com.springboot.user.vo.MemberVO</class>
 	</persistence-unit>
 </persistence>
