@@ -25,20 +25,5 @@ public class MemberServiceImpl implements MemberService{
 		return resultVO;
 	}
 	
-	/**
-	 * null값 처리를 위한 메소드
-	 * @param str
-	 * @return str
-	 */
-	private String retNull(String str) {
-		
-		if(str == null || "".equals(str) || "null".equals(str.toLowerCase())) {
-			return "";
-		}
-		
-		str = str.trim();
-		
-		return str;
-	}
 	
 }
