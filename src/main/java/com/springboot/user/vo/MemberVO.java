@@ -1,5 +1,6 @@
 package com.springboot.user.vo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,13 +24,59 @@ public class MemberVO {
 	  
 	@Id
 	@GeneratedValue(
-            strategy=GenerationType.SEQUENCE,
-            generator="MEMBER_SEQ_GEN"        
-            )
+			strategy=GenerationType.SEQUENCE,
+			generator="MEMBER_SEQ_GEN"        
+			)
+	
+	@Column(name = "MEMBER_IDX")
 	private int memberIdx;
-    private String memberId;
-    private String memberPw;
-    private String memberName;
-    private String memberEmail;
+	
+	@Column(name = "MEMBER_ID")
+	private String memberId;
+	
+	@Column(name = "MEMBER_PW")
+	private String memberPw;
+	
+	@Column(name = "MEMBER_NAME")
+	private String memberName;
+	
+	@Column(name = "MEMBER_EMAIL")
+	private String memberEmail;
+
+	public int getMemberIdx() {
+		return memberIdx;
+	}
+	public void setMemberIdx(int memberIdx) {
+		this.memberIdx = memberIdx;
+	}
+	public String getMemberId() {
+		return memberId;
+	}
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
+	}
+	public String getMemberPw() {
+		return memberPw;
+	}
+	public void setMemberPw(String memberPw) {
+		this.memberPw = memberPw;
+	}
+	public String getMemberName() {
+		return memberName;
+	}
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+	public String getMemberEmail() {
+		return memberEmail;
+	}
+	public void setMemberEmail(String memberEmail) {
+		this.memberEmail = memberEmail;
+	}
     
+    @Override
+    public String toString() {
+    	return "MemberVO [memberIdx=" + memberIdx + ", memberId=" + memberId + ", memberPw=" + memberPw
+    			+ ", memberName=" + memberName + ", memberEmail=" + memberEmail + "]";
+    }
 }
